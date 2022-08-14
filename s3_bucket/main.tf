@@ -21,7 +21,7 @@ resource "aws_s3_bucket_versioning" "bucket_versioning" {
   bucket = aws_s3_bucket.bucket_name.id
 
   versioning_configuration {
-    status = var.enable_server_side_encryption
+    status = var.server_side_encryption
   }
 }
 
